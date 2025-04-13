@@ -25,29 +25,25 @@ export function AboutSection() {
 						}}
 					>
 						<p>
-							My name is Vasile. I successfully graduated Technical University of Moldova, computer
-							science faculty.
-						</p>
+							I’m Bhavesh and I'm an Automation Engineer and Business Intelligence Consultant with a strong foundation in Managed IT Services. 
+							My journey began in customer support, where I developed an instinct for solving problems and understanding user pain points.
+						</p><br/>
 						<p>
-							During my university years, I developed a deep passion for web programming, and I
-							consistently engaged in learning new concepts and techniques in this field.
-						</p>
-						<p>So, officially, my programming journey began in 2017 as a WordPress developer.</p>
-						<p className="my-3.5">
-							I enjoy learning technologies that interest me, which is why I dedicated a significant
-							amount of time to working with WordPress.
-						</p>
+							Over time, I transitioned into automating processes, integrating platforms, and 
+							building end-to-end workflows that save time, reduce errors, and boost productivity. 
+							I'm deeply experienced with tools like Rewst, HALO PSA, and Datto RMM, 
+							and I specialize in connecting the dots between business systems through custom API integrations.
+						</p><br/>
 						<p>
-							One day, I decided to try something new, and I started learning React. I was so
-							excited to see how fast I can build a website with it, and how easy it is to maintain
-							it. Consequently, I quickly learnt Next.js and I used it to build some company
-							projects working in a team with a backend dev.
-						</p>
-						<p className="my-3.5">
-							In december 2023, I had an opportunity to start working as a React developer for a
-							company with the possibility of transitioning to mobile development. I was skeptical
-							about it at first, but I decided to give it a try, and I don&lsquo;t regret it. Now, I
-							thoroughly enjoy working with Flutter and Dart.
+							Whether it's setting up automated user onboarding workflows, 
+							synchronizing systems, or building dashboards 
+							in Power BI and BrightGauge, 
+							I thrive on creating solutions that deliver real value.
+						</p><br/>
+						<p>
+							With a sharp eye for detail, a love for clean, efficient automation, 
+							and a strong CSAT track record, 
+							I’m passionate about helping MSPs unlock their full potential through smart technology.
 						</p>
 					</div>
 				</div>

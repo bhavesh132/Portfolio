@@ -1,59 +1,59 @@
-import { AiFillHtml5, AiOutlineAntDesign, AiFillGithub, AiFillGitlab } from "react-icons/ai";
-import { DiCss3, DiVisualstudio } from "react-icons/di";
-import { IoLogoJavascript } from "react-icons/io";
-import { FaReact, FaWordpressSimple, FaFigma, FaTrello } from "react-icons/fa";
-import { BsBootstrap } from "react-icons/bs";
-import { TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
-import { RiFlutterFill } from "react-icons/ri";
-import AdobeXDIcon from "public/assets/svg/adobexd.svg";
-import ZeplinIcon from "public/assets/svg/zeplin.svg";
-import WebstormIcon from "public/assets/svg/webstorm.svg";
-import JiraIcon from "public/assets/svg/jira.svg";
-import HeadlessUiIcon from "public/assets/svg/headlessui.svg";
-import MuiIcon from "public/assets/svg/mui.svg";
-import ChakraIcon from "public/assets/svg/chakraui.svg";
-import StyledIcon from "public/assets/svg/styledcomponents.svg";
+import ApiPageIcon from "public/assets/svg/api-page-svgrepo-com.svg";
+import AutotaskIcon from "public/assets/svg/autotask.svg";
+import BrightGaugeIcon from "public/assets/svg/brightgauge.svg";
+import DattoRmmIcon from "public/assets/svg/dattormm.svg";
+import HalopsaIcon from "public/assets/svg/halopsa.svg";
+import JsonIcon from "public/assets/svg/language-json-svgrepo-com.svg";
+import NableIcon from "public/assets/svg/N-able.svg";
+import N8nIcon from "public/assets/svg/n8n.svg";
+import NodeIcon from "public/assets/svg/node-16-svgrepo-com.svg";
+import OauthIcon from "public/assets/svg/Oauth_logo.svg";
+import PostmanIcon from "public/assets/svg/postman-svgrepo-com.svg";
+import PowerBIIcon from "public/assets/svg/powerbi-svgrepo-com.svg";
+import PowerShellIcon from "public/assets/svg/PowerShell_5.0_icon.svg";
+import PythonIcon from "public/assets/svg/python-127-svgrepo-com.svg";
+import RewstIcon from "public/assets/svg/rewst.svg";
+import SqlIcon from "public/assets/svg/sql.svg";
+import WorkflowIcon from "public/assets/svg/workflow-office-svgrepo-com.svg";
+import MongoDBIcon from "public/assets/svg/mongodb-svgrepo-com.svg";
 
 export const TECHNOLOGIES = [
 	{
-		category: "Mobile",
-		items: [{ name: "Flutter", icon: <RiFlutterFill size={32} /> }]
-	},
-	{
-		category: "Front-end",
+		category: "RMM & PSA",
 		items: [
-			{ name: "HTML", icon: <AiFillHtml5 size={32} /> },
-			{ name: "CSS", icon: <DiCss3 size={32} /> },
-			{ name: "JS", icon: <IoLogoJavascript size={32} /> },
-			{ name: "React", icon: <FaReact size={32} /> },
-			{ name: "Next", icon: <TbBrandNextjs size={32} /> },
-			{ name: "Tailwind CSS", icon: <TbBrandTailwind size={32} /> },
-			{ name: "MUI", icon: <MuiIcon width={32} /> },
-			{ name: "AntD", icon: <AiOutlineAntDesign size={32} /> },
-			{ name: "Bootstrap", icon: <BsBootstrap size={32} /> },
-			{ name: "Chakra", icon: <ChakraIcon width={32} /> },
-			{ name: "styled components", icon: <StyledIcon width={32} /> },
-			{ name: "HeadlessUI", icon: <HeadlessUiIcon width={32} /> }
+			{ name: "Datto RMM", icon: <DattoRmmIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "Autotask PSA", icon: <AutotaskIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "HALO PSA", icon: <HalopsaIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "ConnectWise Automate", icon: <WorkflowIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "N-Able", icon: <NableIcon className="text-white dark:text-black" width={32} /> }
 		]
 	},
 	{
-		category: "UI tools",
+		category: "Automation",
 		items: [
-			{ name: "Figma", icon: <FaFigma size={32} /> },
-			{ name: "Zeplin", icon: <ZeplinIcon width={36} /> },
-			{ name: "XD", icon: <AdobeXDIcon width={32} /> }
+			{ name: "PowerShell", icon: <PowerShellIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "Python", icon: <PythonIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "Javascript", icon: <NodeIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "Rewst", icon: <RewstIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "n8n", icon: <N8nIcon className="text-white dark:text-black" width={32} /> }
 		]
 	},
 	{
-		category: "Other tools",
+		category: "Business Analytics",
 		items: [
-			{ name: "WordPress CMS", icon: <FaWordpressSimple size={32} /> },
-			{ name: "Jira", icon: <JiraIcon width={32} /> },
-			{ name: "Trello", icon: <FaTrello size={32} /> },
-			{ name: "Github", icon: <AiFillGithub size={32} /> },
-			{ name: "Gitlab", icon: <AiFillGitlab size={32} /> },
-			{ name: "VsCode", icon: <DiVisualstudio size={32} /> },
-			{ name: "WebStorm", icon: <WebstormIcon width={32} /> }
+			{ name: "PowerBI", icon: <PowerBIIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "BrightGauge", icon: <BrightGaugeIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "MS SQL", icon: <SqlIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "MongoDB", icon: <MongoDBIcon className="text-white dark:text-black" width={32} /> }
+		]
+	},
+	{
+		category: "APIs & Integrations",
+		items: [
+			{ name: "REST API", icon: <ApiPageIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "OAuth", icon: <OauthIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "Postman", icon: <PostmanIcon className="text-white dark:text-black" width={32} /> },
+			{ name: "JSON", icon: <JsonIcon className="text-white dark:text-black" width={32} /> }
 		]
 	}
 ];

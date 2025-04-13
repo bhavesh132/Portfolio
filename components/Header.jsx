@@ -14,7 +14,7 @@ export function AppHeader() {
 					{isMobile ? <MobileMenu /> : <Menu />}
 					<div className="flex items-center gap-5">
 						{!isMobile && <ConnectMedia />}
-						<ThemeSwitcher />
+						{/* <ThemeSwitcher /> */}
 					</div>
 				</div>
 			</div>

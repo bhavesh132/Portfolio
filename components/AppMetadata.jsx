@@ -1,6 +1,6 @@
-const author = "Vasile Novatchii";
+const author = "Bhavesh Aggarwal";
 const description =
-	"Software developer from Moldova, Republic of, who loves to develop beautiful websites, single page applications, customer relationship management or code from scratch using React and Next.js";
+	"Automation Engineer from Chandigarh, India, loves to develop and analyse Ideas and bring complex processes to automated workflows, Very keen to develop Scripts and RPA Workflows that can help in automating the processes and make Tedious repetitive tasks more efficient. I am a passionate developer with a strong interest in automation, and problem-solving. I enjoy creating innovative solutions that improve efficiency and productivity of a business.";
 const url = "https://vasile-novatchii.netlify.app";
 export const AppMetadata = {
 	metadataBase: new URL("https://vasile-novatchii.netlify.app/"),
@@ -13,12 +13,14 @@ export const AppMetadata = {
 		icon: "/favicon.png"
 	},
 	keywords: [
-		"Vasile Novatchii",
-		"Vasile Novatchii - software developer",
-		"Frontend developer",
-		"Flutter developer",
-		"Portfolio website",
-		"Frontend Developer Portfolio"
+		"Bhavesh Aggarwal",
+		"Bhavesh Aggarwal - Automation Engineer",
+		"Workflow developer",
+		"RPA developer",
+		"Business Insight Specialist",
+		"Automation Engineer",
+		"Automation Consultant",
+		"Automation Specialist",
 	],
 	creator: author,
 	authors: [{ name: author, url: url }],

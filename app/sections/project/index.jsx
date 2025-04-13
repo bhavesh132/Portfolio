@@ -10,7 +10,7 @@ import { Projects } from "../../projects/components/Projects";
 import { SITE_ROUTES } from "../../../constants";
 
 const url = `${process.env.NEXT_PUBLIC_SANITY_URL}${process.env.NEXT_PUBLIC_SANITY_LATEST_PROJECTS}`;
-
+// aasistants/projects
 export function ProjectsSection() {
 	const btnRef = useRef(null);
 	const isBtnInView = useInView(btnRef, { once: true });
@@ -46,14 +46,16 @@ export function ProjectsSection() {
 						tabIndex={-1}
 						aria-label="Go to projects page"
 						ref={btnRef}
-						className="btn"
+						className="inline-block px-4 py-2 mt-4 text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 rounded-md transition duration-200 shadow-md"
 						style={{
 							transform: btnRef ? "none" : "translateX(-50px)",
 							opacity: isBtnInView ? 1 : 0,
 							transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 						}}
 					>
-						<button aria-label="See more projects">More projects</button>
+						<button aria-label="See more projects">
+							More projects
+						</button>
 					</Link>
 				</div>
 			</section>

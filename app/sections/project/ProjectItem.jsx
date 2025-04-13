@@ -5,16 +5,16 @@ import ImageGallery from "react-image-gallery";
 import { Loader } from "components";
 import { VscSourceControl } from "react-icons/vsc";
 import { FiExternalLink } from "react-icons/fi";
-
+import { urlFor } from '../../../lib/imageBuilder';
 import "react-image-gallery/styles/css/image-gallery.css";
 
 export function ProjectItem({ project, index }) {
 	const { description, images, liveUrl, repoUrl, stack, title } = project;
 	const cardRef = useRef(null);
 	const isInView = useInView(cardRef, { once: true });
-
+	console.log(images)
 	const galleryImages = images.map((img) => ({
-		original: img,
+		original: urlFor(img).url(),
 		loading: "lazy"
 	}));
 
@@ -60,11 +60,11 @@ export function ProjectItem({ project, index }) {
 						<div className="flex-center flex-wrap gap-3">
 							{stack.map((tag) => (
 								<span
-									key={tag}
+									key={tag.title}
 									tabIndex="0"
 									className="px-2 text-sm leading-normal rounded bg-badge-light/50 dark:bg-badge-dark"
 								>
-									{tag}
+									{tag.title}
 								</span>
 							))}
 						</div>

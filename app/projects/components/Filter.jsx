@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
-import { TbBrandJavascript, TbBrandNextjs } from "react-icons/tb";
-import { FaReact } from "react-icons/fa";
+import BrightGaugeIcon from "../../../public/assets/svg/brightgauge.svg";
 import { FilterButton } from "./FilterButton";
+import ImplementationIcon from "../../../public/assets/svg/workflow-office-svgrepo-com.svg";
+import N8nIcon from "../../../public/assets/svg/n8n.svg";
 
 export function Filter({ onClick = (f) => f }) {
 	const animRef = useRef(null);
@@ -36,25 +37,25 @@ export function Filter({ onClick = (f) => f }) {
 						All
 					</FilterButton>
 					<FilterButton
-						onClick={() => handleFilterClick("React")}
-						label="React"
-						active={activeFilter === "React"}
+						onClick={() => handleFilterClick("Business Analytics")}
+						label="Business Analytics"
+						active={activeFilter === "Business Analytics"}
 					>
-						<FaReact size="20" />
+						<BrightGaugeIcon size="20" />
 					</FilterButton>
 					<FilterButton
-						onClick={() => handleFilterClick("Next")}
-						label="Next"
-						active={activeFilter === "Next"}
+						onClick={() => handleFilterClick("Implementation")}
+						label="Implementation"
+						active={activeFilter === "Implementation"}
 					>
-						<TbBrandNextjs size="20" />
+						<ImplementationIcon size="20" />
 					</FilterButton>
 					<FilterButton
-						onClick={() => handleFilterClick("Javascript")}
-						label="Javascript"
-						active={activeFilter === "Javascript"}
+						onClick={() => handleFilterClick("Automation")}
+						label="Automation"
+						active={activeFilter === "Automation"}
 					>
-						<TbBrandJavascript size="20" />
+						<N8nIcon size="20" />
 					</FilterButton>
 				</div>
 			</div>

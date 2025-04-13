@@ -23,7 +23,7 @@ export function TechnologiesSection() {
 						transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 					}}
 				>
-					I work with the following technologies and tools:
+					I have worked with following technologies and tools to build automation solutions and integrations:
 				</p>
 
 				{!!TECHNOLOGIES.length && (

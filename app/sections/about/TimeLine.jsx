@@ -4,11 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
 
 const TimeLineData = [
-	{ year: 2023, text: "Start my journey as a Flutter developer" },
-	{ year: 2022, text: "Start my journey as a React developer" },
-	{ year: 2021, text: "Dive completely into React.js" },
-	{ year: 2018, text: "Work as a WordPress developer" },
-	{ year: 2017, text: "Start a 3mo WordPress internship" }
+	{ year: 2022, text: "Began my professional journey as a Customer Support Associate, where I honed essential communication and client interaction skills." },
+	{ year: 2023, text: "Transitioned into the MSP and IT Services domain, managing frontline communication and ensuring issues were routed and resolved effectively by the right teams." },
+	{ year: 2024, text: "Took a deep dive into automation technologies and PSA tools. Successfully implemented HALO PSA, streamlined internal workflows, and explored reporting platforms like Power BI and BrightGauge." },
+	{ year: 2024, text: "Advanced into a role as Automation Engineer and BI Consultant. Spearheaded automation initiatives that significantly reduced manual workloads and boosted productivity across departments." },
+	{ year: 2024, text: "Built organization-wide business reports by compiling data from diverse sources, transforming raw information into actionable insights for key stakeholders." },
+	{ year: 2025, text: "Delivered automation workflows, business intelligence reports, and custom scripts for multiple partners. Focused heavily on RPA, achieving a 99% CSAT and increasing operational efficiency by 25%." }
 ];
 
 export function TimeLine() {
@@ -60,6 +61,16 @@ export function TimeLine() {
 
 	return (
 		<LazyMotion features={domAnimation}>
+			<h2
+				className="text-3xl font-bold mb-5"
+				style={{
+					transform: isInView ? "none" : "translateY(-200px)",
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+				}}
+			>
+				TIMELINE
+			</h2>
 			<ul
 				ref={carouselRef}
 				onScroll={handleScroll}

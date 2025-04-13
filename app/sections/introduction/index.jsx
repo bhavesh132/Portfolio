@@ -16,10 +16,10 @@ export function WelcomeSection() {
 
 	let [count, setCount] = useState(0);
 	const [text] = useState([
-		"build Flutter apps for Android/iOS",
-		"convert design into modern UI",
-		"build interactive UI using React",
-		"develop websites using Next.js"
+		"Powering MSPs with automation that delivers results.",
+		"Data to decisions — seamlessly automated.",
+		"API — I make them talk.",
+		"BrightPath to less work and more impact."
 	]);
 
 	const onClick = (e) => scrollToEl(e);
@@ -52,7 +52,7 @@ export function WelcomeSection() {
 							}}
 						>
 							<p>
-								Hi, I&apos;m <mark>Vasile</mark> a <mark>passionate</mark> software developer.
+								Hi, I&apos;m <mark>Bhavesh</mark> a <mark>passionate</mark> Automation Engineer.
 							</p>
 						</h1>
 
@@ -100,7 +100,7 @@ export function WelcomeSection() {
 								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 							}}
 						>
-							Stick around to see some of my work.
+							Curious? Let me show you what I can do.
 						</p>
 						<div
 							ref={ref}
@@ -114,10 +114,10 @@ export function WelcomeSection() {
 								href="#projects"
 								onClick={onClick}
 								tabIndex="0"
-								className="btn"
+								className="inline-block px-6 py-3 mt-4 text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 rounded-md transition duration-200 shadow-md"
 								aria-label="Latest projects"
 							>
-								See my latest projects
+								MY PROJECTS
 							</Link>
 						</div>
 					</div>
