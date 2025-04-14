@@ -25,7 +25,7 @@ export function AboutSection() {
 						}}
 					>
 						<p>
-							I&#39;m Bhavesh and I'm an Automation Engineer and Business Intelligence Consultant with a strong foundation in Managed IT Services. 
+							I&#39;m Bhavesh and I&#39;m an Automation Engineer and Business Intelligence Consultant with a strong foundation in Managed IT Services. 
 							My journey began in customer support, where I developed an instinct for solving problems and understanding user pain points.
 						</p><br/>
 						<p>
