@@ -25,17 +25,17 @@ export function AboutSection() {
 						}}
 					>
 						<p>
-							I’m Bhavesh and I'm an Automation Engineer and Business Intelligence Consultant with a strong foundation in Managed IT Services. 
+							I&#39;m Bhavesh and I'm an Automation Engineer and Business Intelligence Consultant with a strong foundation in Managed IT Services. 
 							My journey began in customer support, where I developed an instinct for solving problems and understanding user pain points.
 						</p><br/>
 						<p>
 							Over time, I transitioned into automating processes, integrating platforms, and 
 							building end-to-end workflows that save time, reduce errors, and boost productivity. 
-							I'm deeply experienced with tools like Rewst, HALO PSA, and Datto RMM, 
+							I&#39;m deeply experienced with tools like Rewst, HALO PSA, and Datto RMM, 
 							and I specialize in connecting the dots between business systems through custom API integrations.
 						</p><br/>
 						<p>
-							Whether it's setting up automated user onboarding workflows, 
+							Whether it&#39;s setting up automated user onboarding workflows, 
 							synchronizing systems, or building dashboards 
 							in Power BI and BrightGauge, 
 							I thrive on creating solutions that deliver real value.
