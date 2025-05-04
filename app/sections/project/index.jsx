@@ -19,8 +19,6 @@ export function ProjectsSection() {
 	const projects = data?.result;
 
 	if (error && !data) {
-		console.log(error)
-		console.log("Error loading projects...", data);
 		return null;
 	}
 
@@ -42,7 +40,7 @@ export function ProjectsSection() {
 							<Projects projects={projects} />
 						</ErrorBoundary>
 					</Suspense>
-
+					
 					<Link
 						href={SITE_ROUTES.projects}
 						tabIndex={-1}

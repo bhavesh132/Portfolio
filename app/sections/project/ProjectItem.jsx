@@ -12,7 +12,6 @@ export function ProjectItem({ project, index }) {
 	const { description, images, liveUrl, repoUrl, stack, title } = project;
 	const cardRef = useRef(null);
 	const isInView = useInView(cardRef, { once: true });
-	console.log(images)
 	const galleryImages = images.map((img) => ({
 		original: urlFor(img).url(),
 		loading: "lazy"
