@@ -42,7 +42,7 @@ export default function Page() {
                         ) : filteredBlogs.length === 0 ? (
                             // Empty state
                             <div className="flex-center">
-                                <h3 className="text-2xl">No Blogs found in {category} category</h3>
+                                <h3 className="text-2xl">No Blogs found in category</h3>
                             </div>
                         ) : (
                             <Blogs blogs={filteredBlogs} />

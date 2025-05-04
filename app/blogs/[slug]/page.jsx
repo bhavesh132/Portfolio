@@ -1,6 +1,6 @@
 import { urlFor } from "../../../lib/imageBuilder";
 import { PortableText } from "@portabletext/react";
-
+import Image from "next/image";
 
 export async function generateMetadata({ params }) {
 	return {
@@ -21,10 +21,12 @@ const components = {
     image: ({ value }) => {
       if (!value?.asset?._ref) return null
       return (
-        <img
-          src={urlFor(value).width(800).url()}
+        <Image
+          src={urlFor(value).width(500).url()}
+		  width={500}
+		  height={300}
           alt={value.alt || ' '}
-          className="rounded-md my-4"
+          className="rounded-md mx-auto my-4"
         />
       )
     },
