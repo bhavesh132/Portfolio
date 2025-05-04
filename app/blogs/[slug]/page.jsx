@@ -1,6 +1,7 @@
 import { urlFor } from "../../../lib/imageBuilder";
 import { PortableText } from "@portabletext/react";
 
+
 export async function generateMetadata({ params }) {
 	return {
 		title: `${params.slug} | Blog`,
@@ -35,13 +36,12 @@ const components = {
               {value.filename}
             </div>
           )}
-          <SyntaxHighlighter
+          <div
             language={value.language || 'javascript'}
-            style={atomOneDark}
             customStyle={{ borderRadius: '0 0 0.5rem 0.5rem', margin: 0 }}
           >
             {value.code}
-          </SyntaxHighlighter>
+          </div>
         </div>
       )
     }
@@ -115,7 +115,6 @@ const components = {
 
 export default async function BlogPostPage({ params }) {
 	const url = `${process.env.NEXT_PUBLIC_SANITY_URL}${process.env.NEXT_PUBLIC_SANITY_GET_BLOG1}${params.slug}${process.env.NEXT_PUBLIC_SANITY_GET_BLOG2}`;
-	console.log("Fetching blog post from:", url);
 	const res = await fetch(url, { next: { revalidate: 60 } }); // ISR with 60s revalidation
 	const json = await res.json();
 	const blog = json?.result;
