@@ -18,42 +18,42 @@ import WorkflowIcon from "public/assets/svg/workflow-office-svgrepo-com.svg";
 import MongoDBIcon from "public/assets/svg/mongodb-svgrepo-com.svg";
 
 export const TECHNOLOGIES = [
-	{
-		category: "RMM & PSA",
-		items: [
-			{ name: "Datto RMM", icon: <DattoRmmIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "Autotask PSA", icon: <AutotaskIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "HALO PSA", icon: <HalopsaIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "ConnectWise Automate", icon: <WorkflowIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "N-Able", icon: <NableIcon className="text-white dark:text-black" width={32} /> }
-		]
-	},
-	{
-		category: "Automation",
-		items: [
-			{ name: "PowerShell", icon: <PowerShellIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "Python", icon: <PythonIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "Javascript", icon: <NodeIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "Rewst", icon: <RewstIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "n8n", icon: <N8nIcon className="text-white dark:text-black" width={32} /> }
-		]
-	},
+{
+    category: "RMM & PSA",
+    items: [
+      { name: "Datto RMM", icon: <DattoRmmIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Autotask PSA", icon: <AutotaskIcon className="text-black dark:text-white" width={32} /> },
+      { name: "HALO PSA", icon: <HalopsaIcon className="text-black dark:text-white" width={32} /> },
+      { name: "ConnectWise Automate", icon: <WorkflowIcon className="text-black dark:text-white" width={32} /> },
+      { name: "N-Able", icon: <NableIcon className="text-black dark:text-white" width={32} /> }
+    ]
+  },
+  {
+    category: "Automation",
+    items: [
+      { name: "PowerShell", icon: <PowerShellIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Python", icon: <PythonIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Javascript", icon: <NodeIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Rewst", icon: <RewstIcon className="text-black dark:text-white" width={32} /> },
+      { name: "n8n", icon: <N8nIcon className="text-black dark:text-white" width={32} /> }
+    ]
+  },
 	{
 		category: "Business Analytics",
 		items: [
-			{ name: "PowerBI", icon: <PowerBIIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "BrightGauge", icon: <BrightGaugeIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "MS SQL", icon: <SqlIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "MongoDB", icon: <MongoDBIcon className="text-white dark:text-black" width={32} /> }
+			{ name: "PowerBI", icon: <PowerBIIcon className="text-black dark:text-black" width={32} /> },
+			{ name: "BrightGauge", icon: <BrightGaugeIcon className="text-black dark:text-black" width={32} /> },
+			{ name: "MS SQL", icon: <SqlIcon className="text-black dark:text-black" width={32} /> },
+			{ name: "MongoDB", icon: <MongoDBIcon className="text-black dark:text-black" width={32} /> }
 		]
 	},
 	{
 		category: "APIs & Integrations",
 		items: [
-			{ name: "REST API", icon: <ApiPageIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "OAuth", icon: <OauthIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "Postman", icon: <PostmanIcon className="text-white dark:text-black" width={32} /> },
-			{ name: "JSON", icon: <JsonIcon className="text-white dark:text-black" width={32} /> }
+			{ name: "REST API", icon: <ApiPageIcon className="text-black dark:text-black" width={32} /> },
+			{ name: "OAuth", icon: <OauthIcon className="text-black dark:text-black" width={32} /> },
+			{ name: "Postman", icon: <PostmanIcon className="text-black dark:text-black" width={32} /> },
+			{ name: "JSON", icon: <JsonIcon className="text-black dark:text-black" width={32} /> }
 		]
 	}
 ];

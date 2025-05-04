@@ -8,6 +8,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import Error from "../../error";
 import { Blogs } from "../../blogs/components/blogs";
 import { SITE_ROUTES } from "../../../constants";
+import Link from "next/link";
 
 const url = `${process.env.NEXT_PUBLIC_SANITY_URL}${process.env.NEXT_PUBLIC_SANITY_LATEST_BLOGS}`;
 // /blog/components/Blogs.js will map each BlogItem
@@ -37,18 +38,22 @@ export function BlogSection() {
             </ErrorBoundary>
           </Suspense>
 
-          <a
-            href={SITE_ROUTES.blogs}
-            ref={btnRef}
-            className="inline-block px-4 py-2 mt-4 text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 rounded-md transition duration-200 shadow-md"
-            style={{
-              transform: btnRef ? "none" : "translateX(-50px)",
-              opacity: isBtnInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-            }}
-          >
-            <button>More Blogs</button>
-          </a>
+            <Link
+						href={SITE_ROUTES.blogs}
+						tabIndex={-1}
+						aria-label="Go to projects page"
+						ref={btnRef}
+						className="inline-block px-4 py-2 mt-4 text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 rounded-md transition duration-200 shadow-md"
+						style={{
+							transform: btnRef ? "none" : "translateX(-50px)",
+							opacity: isBtnInView ? 1 : 0,
+							transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+						}}
+					>
+						<button aria-label="See more projects">
+							More Blogs
+						</button>
+					</Link>
         </div>
       </section>
     </LazyMotion>

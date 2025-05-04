@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="48px" height="48px" fill="#fff" viewBox="0 0 16 16"
+<svg width="48px" height="48px" fill="currentColor" viewBox="0 0 16 16"
     xmlns="http://www.w3.org/2000/svg">
 
-    <g fill="#fff" fill-rule="evenodd">
+    <g fill="currentColor" fill-rule="evenodd">
 
         <path
             d="M6.834.33a2.25 2.25 0 012.332 0l5.25 3.182A2.25 2.25 0 0115.5 5.436V6A.75.75 0 0114 6v-.564a.75.75 0 00-.361-.642l-5.25-3.181a.75.75 0 00-.778 0l-5.25 3.181A.75.75 0 002 5.436v5.128a.75.75 0 00.361.642l4.028 2.44a.75.75 0 11-.778 1.283l-4.027-2.44A2.25 2.25 0 01.5 10.563V5.436a2.25 2.25 0 011.084-1.924L6.834.33z" />
