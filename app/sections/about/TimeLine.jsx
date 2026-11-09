@@ -4,17 +4,14 @@ import { useEffect, useRef, useState } from "react";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
 
 const TimeLineData = [
-	{ year: 2022, text: "Began my professional journey as a Customer Support Associate, where I honed essential communication and client interaction skills." },
-	{ year: 2023, text: "Transitioned into the MSP and IT Services domain, managing frontline communication and ensuring issues were routed and resolved effectively by the right teams." },
-	{ year: 2024, text: "Took a deep dive into automation technologies and PSA tools. Successfully implemented HALO PSA, streamlined internal workflows, and explored reporting platforms like Power BI and BrightGauge." },
-	{ year: 2024, text: "Advanced into a role as Automation Engineer and BI Consultant. Spearheaded automation initiatives that significantly reduced manual workloads and boosted productivity across departments." },
-	{ year: 2024, text: "Built organization-wide business reports by compiling data from diverse sources, transforming raw information into actionable insights for key stakeholders." },
-	{ year: 2025, text: "Delivered automation workflows, business intelligence reports, and custom scripts for multiple partners. Focused heavily on RPA, achieving a 99% CSAT and increasing operational efficiency by 25%." }
+	{ year: 2022, text: "Joined eClerx as a Senior Analyst in Customer Operations, solving customer issues in Salesforce CRM and building reports to analyse support data." },
+	{ year: 2023, text: "Promoted to the Quality team to train support executives and keep the process compliant. In December, joined IT By Design as an Automation & AI Engineer and BI Specialist." },
+	{ year: 2024, text: "Delivered end-to-end HALO PSA implementations, including Autotask migration, M365 mailbox intake, DocuSign and QuickBooks Online billing, and automated quote-to-contract across Zoho CRM, Zoho Sign and HALO." },
+	{ year: 2025, text: "Architected a multi-provider LLM gateway with tenant-isolated RAG, built a FastAPI workflow engine for webhook and cron automations, and ran a 28-day training program for automation engineers." },
+	{ year: 2026, text: "Shipping a production Automation Platform, an AI Engine on self-hosted vLLM, Digital Dispatch with an L1 Support Agent, and an MCP gateway that lets AI agents work safely with SQL Server." }
 ];
 
 export function TimeLine() {
-	/// TODO: Add color mode support
-	const colorMode = "dark";
 	const [, setActiveItem] = useState(0);
 	const carouselRef = useRef(null);
 	// const animRef = useRef(null);
@@ -82,7 +79,7 @@ export function TimeLine() {
 							<li
 								id={`carousel__item-${index}`}
 								key={index}
-								className="flex flex-col gap-3 snap-start w-[calc((100%/2)-30px)] sm:w-1/3 md:w-1/6"
+								className="flex flex-col gap-3 snap-start w-[calc((100%/2)-30px)] sm:w-1/3 md:w-1/5"
 								onClick={(e) => handleClick(e, index)}
 								style={{
 									transform: isInView
@@ -105,7 +102,7 @@ export function TimeLine() {
 										height="6"
 										viewBox="0 0 208 6"
 										xmlns="http://www.w3.org/2000/svg"
-										fill={colorMode === "dark" ? "#fff" : "#232323"}
+										fill="currentColor"
 									>
 										<path
 											fillRule="evenodd"

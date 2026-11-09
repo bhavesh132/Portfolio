@@ -30,11 +30,11 @@ export function BlogItem({ blog, index }) {
       )}
       <div className="p-5 flex flex-col gap-4">
         <h3 className="text-xl font-bold">{title}</h3>
-        <p className="text-sm text-gray-300">{excerpt}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-300">{excerpt}</p>
 
         <div className="flex flex-wrap gap-2 text-xs mt-2">
           {tags?.map(tag => (
-            <span key={tag} className="px-2 py-1 bg-badge-dark rounded">
+            <span key={tag} className="px-2 py-1 bg-badge-light dark:bg-badge-dark rounded">
               {tag}
             </span>
           ))}
@@ -42,7 +42,7 @@ export function BlogItem({ blog, index }) {
 
        <Link
           href={`/blogs/${slug.current}`}
-          className="mt-4 inline-flex items-center text-indigo-200 font-medium hover:text-indigo-500 transition-colors duration-200 group"
+          className="mt-4 inline-flex items-center text-indigo-600 dark:text-indigo-200 font-medium hover:text-indigo-500 transition-colors duration-200 group"
         >
           Read more
           <span className="ml-1 transition-transform duration-200 transform group-hover:translate-x-1">→</span>

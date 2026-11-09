@@ -34,16 +34,40 @@ import OllamaIcon from "public/assets/svg/ollama.svg";
 import OpenAiIcon from "public/assets/svg/openai.svg";
 import AnthropicIcon from "public/assets/svg/anthropic.svg";
 import GeminiIcon from "public/assets/svg/googlegemini.svg";
+import TailwindIcon from "public/assets/svg/tailwindcss.svg";
+import ViteIcon from "public/assets/svg/vite.svg";
+import RedisIcon from "public/assets/svg/redis.svg";
+import CeleryIcon from "public/assets/svg/celery.svg";
+import McpIcon from "public/assets/svg/modelcontextprotocol.svg";
+import QwenIcon from "public/assets/svg/qwen.svg";
+import WebexIcon from "public/assets/svg/webex.svg";
+import AzureIcon from "public/assets/svg/azure.svg";
+import Office365Icon from "public/assets/svg/office365.svg";
+import ThreeCxIcon from "public/assets/svg/3cx.svg";
+import DockerIcon from "public/assets/svg/docker.svg";
+import GithubActionsIcon from "public/assets/svg/githubactions.svg";
+import CloudflareIcon from "public/assets/svg/cloudflare.svg";
+import RabbitMqIcon from "public/assets/svg/rabbitmq.svg";
+import HubspotIcon from "public/assets/svg/hubspot.svg";
+import ZohoIcon from "public/assets/svg/zoho.svg";
+import QuickbooksIcon from "public/assets/svg/quickbooks.svg";
 
 export const TECHNOLOGIES = [
 {
-    category: "RMM & PSA",
+    category: "Tools",
     items: [
       { name: "Datto RMM", icon: <DattoRmmIcon className="text-black dark:text-white" width={32} /> },
       { name: "Autotask PSA", icon: <AutotaskIcon className="text-black dark:text-white" width={32} /> },
       { name: "HALO PSA", icon: <HalopsaIcon className="text-black dark:text-white" width={32} /> },
       { name: "ConnectWise Automate", icon: <WorkflowIcon className="text-black dark:text-white" width={32} /> },
-      { name: "N-Able", icon: <NableIcon className="text-black dark:text-white" width={32} /> }
+      { name: "N-Able", icon: <NableIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Microsoft 365", icon: <Office365Icon className="text-black dark:text-white" width={32} /> },
+      { name: "Azure", icon: <AzureIcon className="text-black dark:text-white" width={32} /> },
+      { name: "3CX", icon: <ThreeCxIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Webex", icon: <WebexIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Docker", icon: <DockerIcon className="text-black dark:text-white" width={32} /> },
+      { name: "GitHub Actions", icon: <GithubActionsIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Cloudflare", icon: <CloudflareIcon className="text-black dark:text-white" width={32} /> }
     ]
   },
   {
@@ -65,6 +89,8 @@ export const TECHNOLOGIES = [
       { name: "Gemini", icon: <GeminiIcon className="text-black dark:text-white" width={32} /> },
       { name: "Ollama", icon: <OllamaIcon className="text-black dark:text-white" width={32} /> },
       { name: "vLLM", icon: <VllmIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Qwen", icon: <QwenIcon className="text-black dark:text-white" width={32} /> },
+      { name: "MCP", icon: <McpIcon className="text-black dark:text-white" width={32} /> },
       { name: "LangChain", icon: <LangChainIcon className="text-black dark:text-white" width={32} /> },
       { name: "LangGraph", icon: <LangGraphIcon className="text-black dark:text-white" width={32} /> },
       { name: "Pinecone", icon: <PineconeIcon className="text-black dark:text-white" width={32} /> },
@@ -82,26 +108,34 @@ export const TECHNOLOGIES = [
       { name: "FastAPI", icon: <FastApiIcon className="text-black dark:text-white" width={32} /> },
       { name: "Django", icon: <DjangoIcon className="text-black dark:text-white" width={32} /> },
       { name: "HTML", icon: <HtmlIcon className="text-black dark:text-white" width={32} /> },
-      { name: "CSS", icon: <CssIcon className="text-black dark:text-white" width={32} /> }
+      { name: "CSS", icon: <CssIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Tailwind", icon: <TailwindIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Vite", icon: <ViteIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Redis", icon: <RedisIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Celery", icon: <CeleryIcon className="text-black dark:text-white" width={32} /> },
+      { name: "RabbitMQ", icon: <RabbitMqIcon className="text-black dark:text-white" width={32} /> }
     ]
   },
 	{
 		category: "Business Analytics",
 		items: [
-			{ name: "PowerBI", icon: <PowerBIIcon className="text-black dark:text-black" width={32} /> },
-			{ name: "BrightGauge", icon: <BrightGaugeIcon className="text-black dark:text-black" width={32} /> },
-			{ name: "MS SQL", icon: <SqlIcon className="text-black dark:text-black" width={32} /> },
-			{ name: "MongoDB", icon: <MongoDBIcon className="text-black dark:text-black" width={32} /> },
+			{ name: "PowerBI", icon: <PowerBIIcon className="text-black dark:text-white" width={32} /> },
+			{ name: "BrightGauge", icon: <BrightGaugeIcon className="text-black dark:text-white" width={32} /> },
+			{ name: "MS SQL", icon: <SqlIcon className="text-black dark:text-white" width={32} /> },
+			{ name: "MongoDB", icon: <MongoDBIcon className="text-black dark:text-white" width={32} /> },
 			{ name: "PostgreSQL", icon: <PostgresIcon className="text-black dark:text-white" width={32} /> }
 		]
 	},
 	{
 		category: "APIs & Integrations",
 		items: [
-			{ name: "REST API", icon: <ApiPageIcon className="text-black dark:text-black" width={32} /> },
-			{ name: "OAuth", icon: <OauthIcon className="text-black dark:text-black" width={32} /> },
-			{ name: "Postman", icon: <PostmanIcon className="text-black dark:text-black" width={32} /> },
-			{ name: "JSON", icon: <JsonIcon className="text-black dark:text-black" width={32} /> }
+			{ name: "REST API", icon: <ApiPageIcon className="text-black dark:text-white" width={32} /> },
+			{ name: "OAuth", icon: <OauthIcon className="text-black dark:text-white" width={32} /> },
+			{ name: "Postman", icon: <PostmanIcon className="text-black dark:text-white" width={32} /> },
+			{ name: "JSON", icon: <JsonIcon className="text-black dark:text-white" width={32} /> },
+			{ name: "HubSpot", icon: <HubspotIcon className="text-black dark:text-white" width={32} /> },
+			{ name: "Zoho", icon: <ZohoIcon className="text-black dark:text-white" width={32} /> },
+			{ name: "QuickBooks", icon: <QuickbooksIcon className="text-black dark:text-white" width={32} /> }
 		]
 	}
 ];

@@ -4,6 +4,7 @@ import BrightGaugeIcon from "../../../public/assets/svg/brightgauge.svg";
 import { FilterButton } from "./FilterButton";
 import ImplementationIcon from "../../../public/assets/svg/workflow-office-svgrepo-com.svg";
 import N8nIcon from "../../../public/assets/svg/n8n.svg";
+import { BsCodeSlash } from "react-icons/bs";
 
 export function Filter({ onClick = (f) => f }) {
 	const animRef = useRef(null);
@@ -51,11 +52,18 @@ export function Filter({ onClick = (f) => f }) {
 						<ImplementationIcon size="20" />
 					</FilterButton>
 					<FilterButton
-						onClick={() => handleFilterClick("Automation")}
-						label="Automation"
-						active={activeFilter === "Automation"}
+						onClick={() => handleFilterClick("Automation & AI")}
+						label="Automation & AI"
+						active={activeFilter === "Automation & AI"}
 					>
 						<N8nIcon size="20" />
+					</FilterButton>
+					<FilterButton
+						onClick={() => handleFilterClick("Development")}
+						label="Development"
+						active={activeFilter === "Development"}
+					>
+						<BsCodeSlash size="20" />
 					</FilterButton>
 				</div>
 			</div>

@@ -12,7 +12,7 @@ export function ProjectItem({ project, index }) {
 	const { description, images, liveUrl, repoUrl, stack, title } = project;
 	const cardRef = useRef(null);
 	const isInView = useInView(cardRef, { once: true });
-	const galleryImages = images.map((img) => ({
+	const galleryImages = (images ?? []).map((img) => ({
 		original: urlFor(img).url(),
 		loading: "lazy"
 	}));
@@ -29,20 +29,22 @@ export function ProjectItem({ project, index }) {
 				transition: `all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) ${index === 0 ? 0 : 25 * index}ms`
 			}}
 		>
-			<figure>
-				<div className="aspect-[12/9.2] w-full h-full">
-					<Suspense fallback={<Loader />}>
-						<ImageGallery
-							items={galleryImages}
-							showPlayButton={false}
-							showThumbnails={false}
-							showIndex
-							lazyload
-							additionalClass="gallery-item"
-						/>
-					</Suspense>
-				</div>
-			</figure>
+			{!!galleryImages.length && (
+				<figure>
+					<div className="aspect-[12/9.2] w-full h-full">
+						<Suspense fallback={<Loader />}>
+							<ImageGallery
+								items={galleryImages}
+								showPlayButton={false}
+								showThumbnails={false}
+								showIndex
+								lazyload
+								additionalClass="gallery-item"
+							/>
+						</Suspense>
+					</div>
+				</figure>
+			)}
 
 			<div className="flex-[2] px-5 py-6 text-center flex flex-col gap-10">
 				<header className="flex-1 flex items-center justify-start flex-col gap-3">
@@ -55,7 +57,7 @@ export function ProjectItem({ project, index }) {
 				</header>
 
 				<footer className="flex flex-col gap-10">
-					{!!stack.length && (
+					{!!stack?.length && (
 						<div className="flex-center flex-wrap gap-3">
 							{stack.map((tag) => (
 								<span

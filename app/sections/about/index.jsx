@@ -25,25 +25,19 @@ export function AboutSection() {
 						}}
 					>
 						<p>
-							I&#39;m Bhavesh and I&#39;m an Automation Engineer and Business Intelligence Consultant with a strong foundation in Managed IT Services. 
-							My journey began in customer support, where I developed an instinct for solving problems and understanding user pain points.
+							I&#39;m Bhavesh, a Full Stack Developer and Automation &amp; AI Engineer with 2+ years building
+							production automation platforms, LLM applications and PSA/CRM integrations for managed service providers (MSPs).
+							My journey began in customer operations, where I learned to understand user pain points before solving them.
 						</p><br/>
 						<p>
-							Over time, I transitioned into automating processes, integrating platforms, and 
-							building end-to-end workflows that save time, reduce errors, and boost productivity. 
-							I&#39;m deeply experienced with tools like Rewst, HALO PSA, and Datto RMM, 
-							and I specialize in connecting the dots between business systems through custom API integrations.
+							Today I design multi-provider LLM routing with tenant-isolated RAG, workflow engines in FastAPI,
+							and multi-tenant backends with Django, Express and FastAPI. I connect the tools MSPs run on
+							(HALO PSA, ConnectWise, Autotask, Zoho, HubSpot, QuickBooks, Microsoft Graph) through APIs,
+							Rewst, n8n and Windmill.
 						</p><br/>
 						<p>
-							Whether it&#39;s setting up automated user onboarding workflows, 
-							synchronizing systems, or building dashboards 
-							in Power BI and BrightGauge, 
-							I thrive on creating solutions that deliver real value.
-						</p><br/>
-						<p>
-							With a sharp eye for detail, a love for clean, efficient automation, 
-							and a strong CSAT track record, 
-							I’m passionate about helping MSPs unlock their full potential through smart technology.
+							I ship automation end to end, from the first webhook to the dashboard that reports on it,
+							and I lead training for automation and AI engineers so the solutions keep growing after I hand them over.
 						</p>
 					</div>
 				</div>

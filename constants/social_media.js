@@ -17,7 +17,7 @@ export const SOCIAL_MEDIA = [
 		id: "mail",
 		icon: <BsFillEnvelopeOpenFill />,
 		title: "Send me an email",
-		url: "mailto://bhavesh25515@outlook.com"
+		url: "mailto:bhavesh25515@gmail.com"
 	},
 	{
 		id: "phone",

@@ -17,9 +17,9 @@ export function WelcomeSection() {
 	let [count, setCount] = useState(0);
 	const [text] = useState([
 		"Powering MSPs with automation that delivers results.",
-		"Data to decisions — seamlessly automated.",
-		"API — I make them talk.",
-		"BrightPath to less work and more impact."
+		"Route every request to the right LLM.",
+		"APIs — I make them talk.",
+		"Ship AI agents that work in production."
 	]);
 
 	const onClick = (e) => scrollToEl(e);
@@ -52,7 +52,7 @@ export function WelcomeSection() {
 							}}
 						>
 							<p>
-								Hi, I&apos;m <mark>Bhavesh</mark> a <mark>passionate</mark> Automation Engineer.
+								Hi, I&apos;m <mark>Bhavesh</mark>, a Full Stack <mark>Automation &amp; AI</mark> Engineer.
 							</p>
 						</h1>
 
