@@ -16,6 +16,24 @@ import RewstIcon from "public/assets/svg/rewst.svg";
 import SqlIcon from "public/assets/svg/sql.svg";
 import WorkflowIcon from "public/assets/svg/workflow-office-svgrepo-com.svg";
 import MongoDBIcon from "public/assets/svg/mongodb-svgrepo-com.svg";
+import PineconeIcon from "public/assets/svg/pinecone.svg";
+import QdrantIcon from "public/assets/svg/qdrant.svg";
+import PgVectorIcon from "public/assets/svg/pgvector.svg";
+import LangChainIcon from "public/assets/svg/langchain.svg";
+import LangGraphIcon from "public/assets/svg/langgraph.svg";
+import WindmillIcon from "public/assets/svg/windmill.svg";
+import FastApiIcon from "public/assets/svg/fastapi.svg";
+import DjangoIcon from "public/assets/svg/django.svg";
+import ReactIcon from "public/assets/svg/react.svg";
+import HtmlIcon from "public/assets/svg/html5.svg";
+import CssIcon from "public/assets/svg/css.svg";
+import PostgresIcon from "public/assets/svg/postgresql.svg";
+import ExpressIcon from "public/assets/svg/express.svg";
+import VllmIcon from "public/assets/svg/vllm.svg";
+import OllamaIcon from "public/assets/svg/ollama.svg";
+import OpenAiIcon from "public/assets/svg/openai.svg";
+import AnthropicIcon from "public/assets/svg/anthropic.svg";
+import GeminiIcon from "public/assets/svg/googlegemini.svg";
 
 export const TECHNOLOGIES = [
 {
@@ -35,7 +53,36 @@ export const TECHNOLOGIES = [
       { name: "Python", icon: <PythonIcon className="text-black dark:text-white" width={32} /> },
       { name: "Javascript", icon: <NodeIcon className="text-black dark:text-white" width={32} /> },
       { name: "Rewst", icon: <RewstIcon className="text-black dark:text-white" width={32} /> },
-      { name: "n8n", icon: <N8nIcon className="text-black dark:text-white" width={32} /> }
+      { name: "n8n", icon: <N8nIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Windmill", icon: <WindmillIcon className="text-black dark:text-white" width={32} /> }
+    ]
+  },
+  {
+    category: "AI Stack",
+    items: [
+      { name: "OpenAI", icon: <OpenAiIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Anthropic", icon: <AnthropicIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Gemini", icon: <GeminiIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Ollama", icon: <OllamaIcon className="text-black dark:text-white" width={32} /> },
+      { name: "vLLM", icon: <VllmIcon className="text-black dark:text-white" width={32} /> },
+      { name: "LangChain", icon: <LangChainIcon className="text-black dark:text-white" width={32} /> },
+      { name: "LangGraph", icon: <LangGraphIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Pinecone", icon: <PineconeIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Qdrant", icon: <QdrantIcon className="text-black dark:text-white" width={32} /> },
+      { name: "PGVector", icon: <PgVectorIcon className="text-black dark:text-white" width={32} /> }
+    ]
+  },
+  {
+    category: "Web Development",
+    items: [
+      { name: "MongoDB", icon: <MongoDBIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Express", icon: <ExpressIcon className="text-black dark:text-white" width={32} /> },
+      { name: "React", icon: <ReactIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Node.js", icon: <NodeIcon className="text-black dark:text-white" width={32} /> },
+      { name: "FastAPI", icon: <FastApiIcon className="text-black dark:text-white" width={32} /> },
+      { name: "Django", icon: <DjangoIcon className="text-black dark:text-white" width={32} /> },
+      { name: "HTML", icon: <HtmlIcon className="text-black dark:text-white" width={32} /> },
+      { name: "CSS", icon: <CssIcon className="text-black dark:text-white" width={32} /> }
     ]
   },
 	{
@@ -44,7 +91,8 @@ export const TECHNOLOGIES = [
 			{ name: "PowerBI", icon: <PowerBIIcon className="text-black dark:text-black" width={32} /> },
 			{ name: "BrightGauge", icon: <BrightGaugeIcon className="text-black dark:text-black" width={32} /> },
 			{ name: "MS SQL", icon: <SqlIcon className="text-black dark:text-black" width={32} /> },
-			{ name: "MongoDB", icon: <MongoDBIcon className="text-black dark:text-black" width={32} /> }
+			{ name: "MongoDB", icon: <MongoDBIcon className="text-black dark:text-black" width={32} /> },
+			{ name: "PostgreSQL", icon: <PostgresIcon className="text-black dark:text-white" width={32} /> }
 		]
 	},
 	{

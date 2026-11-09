@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx update-browserslist-db@latest)",
+      "Bash(npx sanity *)",
+      "Bash(npm list *)",
+      "Bash(npm view *)",
+      "Bash(npm install *)",
+      "Bash(Get-ChildItem \"D:\\\\Dev\\\\personal\\\\portfolio\\\\sanity\\\\brightpath-portfolio\\\\node_modules\\\\vite\\\\dist\\\\node\\\\chunks\" -Filter \"*postcss*\")",
+      "Bash(Select-Object Name)"
+    ]
+  }
+}
